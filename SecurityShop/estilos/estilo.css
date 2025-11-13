@@ -1,0 +1,47 @@
+:root{
+    --rosa900:#e57d90;
+    --rosa700:#f1889b;
+    --rosa500:#f99aaa;
+    --rosa300:#fdb4bf;
+    --rosa200:#ffcdd4;
+    --tinta:#2a2a2a;
+    --suave:#6b6b6b;
+    --borde:#e7e7e7}
+*{
+    box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;color:var(--tinta)}
+.contenedor{max-width:1100px;margin:0 auto;padding:0 16px}
+.cabecera{position:sticky;top:0;background:var(--rosa900);color:#fff;border-bottom:4px solid var(--rosa700);z-index:20}
+.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+.marca{font-weight:800;font-size:1.4rem;color:#fff;text-decoration:none}.marca span{color:#2b2b2b;background:#fff;padding:2px 6px;border-radius:6px;margin-left:4px}
+.menu a{color:#fff;text-decoration:none;margin:0 8px;padding:6px 8px;border-radius:8px}.menu a:hover{background:rgba(255,255,255,.15)}
+.acciones{display:flex;gap:8px}.hola{margin-right:6px}.btn{background:var(--rosa500);border:none;color:#fff;padding:10px 14px;border-radius:12px;text-decoration:none;display:inline-block}.btn:hover{background:var(--rosa700)}.btn-borde{background:transparent;border:1px solid #fff;color:#fff}
+.principal{padding-bottom:40px}.pie{background:var(--rosa900);color:#fff;border-top:4px solid var(--rosa700)}.pie .contenedor{padding:20px 16px}.mini{opacity:.85;font-size:.9rem}
+.hero{background:linear-gradient(to bottom,var(--rosa200),#fff);padding:32px 0}.hero .contenedor{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.hero-texto h1{font-size:2rem;margin:.2rem 0 1rem}.hero-texto h1 span{color:var(--rosa900)}
+.tarjeta-producto{display:flex;gap:16px;background:#fff;border:1px solid var(--borde);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.img-producto img{width:200px;height:auto;display:block}.info-producto .precio{font-size:1.6rem;font-weight:700}
+.resenas{padding:24px 0}.lista-resenas{display:grid;gap:12px;margin:16px 0}.resena{border:1px solid var(--borde);border-radius:12px;padding:12px;background:#fff}.estrellas{color:#e3b600}
+label{display:block;margin:10px 0 4px}input,select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--borde)}
+.tabla{width:100%;border-collapse:collapse;margin:10px 0}.tabla th,.tabla td{border-bottom:1px solid var(--borde);padding:10px;text-align:left}
+.detalle-producto{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px auto}.detalle-producto .media img{width:100%;max-width:480px;border-radius:16px;border:1px solid var(--borde)}
+.precio{color:#b10f3a}.suave{color:var(--suave)}.error{color:#b10f3a;background:#ffe6ea;padding:10px;border-radius:10px}.ok{color:#0a7a3c;background:#e7ffef;padding:10px;border-radius:10px}
+.total{margin:16px 0;font-size:1.2rem}.pago{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.auth form{max-width:420px}.grid-servicios{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}.tarjeta-servicio{border:1px solid var(--borde);border-radius:12px;padding:12px;background:#fff}
+@media (max-width:900px){.hero .contenedor,.detalle-producto,.pago,.grid-servicios{grid-template-columns:1fr}}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.hola {
+  margin: 0;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+  color: #fff;
+}

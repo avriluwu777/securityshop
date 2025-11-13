@@ -1,0 +1,2 @@
+function validarPago(form){ if(form.tarjeta.value.replace(/\s+/g,'').length<15){ alert('Número de tarjeta inválido'); return false; } return true; }
+document.addEventListener('DOMContentLoaded',()=>{ document.querySelectorAll('.estrellas').forEach(e=>{ const n=parseInt(e.getAttribute('data-estrellas')||'0',10); e.innerText='★'.repeat(n)+'☆'.repeat(5-n); }); });

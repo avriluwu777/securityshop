@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/conexion.php'; session_destroy(); header('Location: '.URL_BASE.'/inicio.php');
